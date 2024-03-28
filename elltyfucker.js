@@ -4326,29 +4326,12 @@
                             var t = e.pages[n].children.find((function(e) {
                                 return "watermark" == e.name
                             }));
-                            if ("null == pe.plan) t || e.pages[n].addElement({
-                                type: "image",
-                                x: e.width - 166,
-                                y: e.height - 126,
-                                src: "/design/watermark.png",
-                                name: "watermark",
-                                width: 136,
-                                height: 96,
-                                keepRatio: !0,
-                                selectable: !1,
-                                draggable: !1,
-                                showInExport: !0,
-                                resizeable: !1,
-                                contentEditable: !1,
-                                removeable: !0,
-                                alwaysOnTop: !0
-                            });
-                            else {
-                                var o = e.pages[n].children.find((function(e) {
-                                    return "watermark" == e.name
-                                }));
-                                o && e.deleteElements([o.id])
-                            }
+
+                            var o = e.pages[n].children.find((function(e) {
+                                return "watermark" == e.name
+                            }));
+                            o && e.deleteElements([o.id])
+
                         }
                     }), [pe]);
                     (0, u.useEffect)((function() {
